@@ -23,13 +23,11 @@ Notes: SQLite database is stored in /restsdk/data/db/index.db. Inside the DB two
 
 If this script has helped you recover your data, please consider saying thanks with a Bitcoin donation 1DqSLNR8kTgwq5rvveUFDSbYQnJp9D5gfR*
 
-# Configuration confirmed :
-Ubuntu 18.04
-Python 3.6 installed
+### Configuration confirmed :
+Ubuntu 18.04 Python 3.6 installed
 
 ```console
 foo@bar:~/Path/To/Python/Script$ sudo python3 restsdk_public.py
-foo
 ```
 
 
