@@ -32,7 +32,7 @@ Ubuntu 18.04 Python 3.6 already installed
 foo@bar:~/Path/To/Python/Script$ sudo python3 restsdk_public.py
 ```
 ### Get the files structured in the original folders. Different users spaces originaly protected with password are recovered.
-![alt text]()
+![alt text](screenshot-2.png)
 
 
 
