@@ -12,7 +12,7 @@ This script can rebuilt structure and files in original state.
 ### Configuration confirmed :
 Ubuntu 18.04 Python 3.6 already installed
 
-*Original information :*
+***Original information :***
 
 ***Problem:*** *MyCloud devices don't use a simple, flat filesystem like other external drives, they store files with random-seeming names and directory structures. If your MyCloud is not functioning, you will need to read the SQLite database on the device to determine the original file structure.*
 
@@ -21,7 +21,7 @@ Ubuntu 18.04 Python 3.6 already installed
 ***Notes:*** *SQLite database is stored in /restsdk/data/db/index.db. Inside the DB two main tables appear to be of interest, FILES and ImageTrans. FILES lists each file with a unique ID (primary key) and a ContentID (the name of the file when stored on the filesystem) along with the file name "My important picture.jpg" and some other metadata. I believe ImageTrans is only for thumbnailing purposes but I could be wrong about that. Importantly, the entries in FILES have a "parent" attribute which places each file in a directory structure. This script totally ignores ImageTrans.*
 
 
-### Change 3 first lines with your own path :
+### Change 3 first lines with your own paths :
     #DO NOT ADD SLASHES TO END OF DIRECTORIES
     db='/restsdk/data/db/index.db' #where the file DB is stored example: /data/db/index.db
     filedir='/restsdk/data/files' #where the files are stored example: /restsdk/data/files
@@ -31,6 +31,10 @@ Ubuntu 18.04 Python 3.6 already installed
 ```console
 foo@bar:~/Path/To/Python/Script$ sudo python3 restsdk_public.py
 ```
+### Get the files structured in the original folders. Different users spaces originaly protected with password are recovered.
+![alt text]()
+
+
 
 *If this script has helped you recover your data, please consider saying thanks to springfielddatarecovery with a Bitcoin donation 1DqSLNR8kTgwq5rvveUFDSbYQnJp9D5gfR*
 
