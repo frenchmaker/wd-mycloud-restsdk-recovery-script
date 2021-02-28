@@ -5,13 +5,9 @@ Thanks a lot to [springfielddatarecovery](https://github.com/springfielddatareco
 
 ![alt text](Feature_images_WDCloud.jpg)
 
-WD MyCloud Home offers network HDDs with ONLY ethernet port and a WD Discovery App to connect users to files.
+WD MyCloud Home offers network HDDs with ONLY ethernet port and a WD Discovery App to connect users to files. In case of badsectors presence or after a breackdown, HDD can appears disconnected in app. After you get an image is with maximum of good sectors from the drive with your best tool, you can mount an ext4 partition used as main volume to store users files.
 
-In case of badsectors presence or after a breackdown, HDD can appears disconnected in app.
-
-After image maximum of good sectors the drive with your best tool, we can find an ext4 partition as main volume to store users files.
-
-
+This script can rebuilt structure and files in original state.
 
 *Original information :*
 
@@ -23,9 +19,16 @@ After image maximum of good sectors the drive with your best tool, we can find a
 
 *If this script has helped you recover your data, please consider saying thanks to springfielddatarecovery with a Bitcoin donation 1DqSLNR8kTgwq5rvveUFDSbYQnJp9D5gfR*
 
-### Configuration confirmed :
-Ubuntu 18.04 Python 3.6 installed
+### Change 3 first lines with your own path :
+    #DO NOT ADD SLASHES TO END OF DIRECTORIES
+    db='/restsdk/data/db/index.db' #where the file DB is stored example: /data/db/index.db
+    filedir='/restsdk/data/files' #where the files are stored example: /restsdk/data/files
+    dumpdir='/location/to/dump/files/to' #where you want the new files dumped example:/EXTERNAL/FILES
 
+### Configuration confirmed :
+Ubuntu 18.04 Python 3.6 already installed
+
+### Run the script in terminal :
 ```console
 foo@bar:~/Path/To/Python/Script$ sudo python3 restsdk_public.py
 ```
